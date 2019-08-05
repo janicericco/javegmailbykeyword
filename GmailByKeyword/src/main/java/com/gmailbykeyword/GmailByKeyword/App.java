@@ -28,11 +28,11 @@ public class App
         
 		GmailClient gmailClient = new ImapGmailClient();//.. some new instance of GmailClient
 		GmailConnection conn = new ImapGmailConnection();
-		conn.setLoginCredentials("janicericco@gmail.com", "rtuezxyuyhhdvpsm".toCharArray());
+		conn.setLoginCredentials("ssummersmiths@gmail.com", "TestSummer4*".toCharArray());
 		gmailClient.setConnection(conn);
 		      
 		final List<GmailMessage> messages = gmailClient.getMessagesBy(
-		        GmailClient.EmailSearchStrategy.KEYWORD,"Repertorio");
+		        GmailClient.EmailSearchStrategy.KEYWORD,"DevOps");
 		
 		
 		try {
@@ -94,7 +94,7 @@ public class App
 			}
 			
 			factory.close();  
-		    session.close();   
+		    //session.close();   
 		    
 		    System.out.println( "Registros insertados: ".concat((String.valueOf(i))));
 		    
